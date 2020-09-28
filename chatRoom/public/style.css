@@ -1,0 +1,324 @@
+* {
+    box-sizing: border-box;
+    font-family: monospace;
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    max-width: 100%;
+}
+#header {
+    color: #d99202;
+    background-color: #ffffff6b;
+    font-size: 20px;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#chatroom {
+    margin-top: 15px;
+    margin-bottom: 0px;
+    color: #2c9ca4;
+    text-align: center;
+}
+#navigationBar {
+    margin: 15px;
+    width: 100%;
+    overflow: hidden;
+}
+.nav {
+    padding: 10px;
+    margin: 2.5px;
+    display: block;
+    float: left;
+    width: 23%;
+    color: #2c9ca4;
+    background-color: #79d0d526;
+    border: 2.5px solid #79d1d5;
+    border-radius: 5px;
+    text-align: center;
+}
+.nav:hover {
+    outline: none;   
+    box-shadow: 0 0 0 1px  #fdd349;
+    background-color : #fdd349;
+}
+#section {
+    color: #fdd349;
+    background-image: url(pictures/origamiplane.jpg);
+    background-size: 600px;
+    background-repeat: repeat, repeat;
+    background-position: center;
+    border: 2.5px dashed #79d1d5;
+    margin: 5px;
+    overflow: scroll;
+    height: 300px;
+}
+#inputs {
+    margin: 10px;
+    padding: 10px;
+}
+#color {
+    width: 50%;
+    height: 50px;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2.5px solid #a5b0b4;
+    margin: 0px;
+}
+#message {
+    width: 50%;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    color: #205e61;
+    border: 2.5px solid #fdd349;
+    text-align: center;
+    margin: 0px;
+}
+#message:focus {
+    outline: none;
+    border: 2.5px solid #fdd349;
+    background-color: #fdd3491f;
+} 
+#message::placeholder {
+    color:#d99202;
+    text-align: center;
+}
+#username {
+    width: 50%;
+    height: 40px;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    color: #d99202;
+    border: 2.5px solid #79d1d5;
+    text-align: center;
+}
+#username:focus {
+    outline: none;
+    border: 2.5px solid #79d1d5;
+    background-color: #79d0d526;
+} 
+#username::placeholder {
+    color:#205e61;
+    text-align: center;
+}
+#updateColor {
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    width: 100px;
+    font-size: 13px;
+    border-radius: 5px;
+    color: #686766;
+    border: 2.5px solid #a5b0b4;
+    background-color: #87909426;
+}
+#updateColor:hover {
+    outline: none;
+    border: 2.5px solid #a5b0b4;
+    background-color: #ffffff79;
+}
+#setDates {
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    width: 100px;
+    font-size: 13px;
+    border-radius: 5px;
+    color: #686766;
+    border: 2.5px solid #a5b0b4;
+    background-color: #87909426;
+}
+#setDates:hover {
+    outline: none;
+    border: 2.5px solid #a5b0b4;
+    background-color: #ffffff79;
+}
+#send:focus {
+    outline: none;
+    border: 2.5px solid #fdd349;
+    background-color: #fdd3491f;
+}
+#send:hover{
+    outline: none;
+    border: 2.5px solid #fdd349;
+    background-color: #79d0d579;
+}
+.dateInput {
+    width: 24.5%;
+    height: 50px;
+    font-size: 13px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2.5px solid #a5b0b4;
+    margin: 10px;
+}
+#send {
+    margin: 5px;
+    padding: 10px;
+    width: 100px;
+    font-size: 13px;
+    border-radius: 5px;
+    color: #d99202;
+    border: 2.5px solid #fdd349;
+    background-color: #fdd3491f;
+}
+#send:focus {
+    outline: none;
+    border: 2.5px solid #fdd349;
+    background-color: #fdd3491f;
+}
+#send:hover{
+    outline: none;
+    border: 2.5px solid #fdd349;
+    background-color: #79d0d579;
+}
+#update {
+    margin: 5px;
+    padding: 10px;
+    width: 100px;
+    font-size: 13px;
+    border-radius: 5px;
+    color: #205e61;
+    border: 2.5px solid #79d1d5;
+    background-color: #79d0d526;
+}
+#update:focus {
+    outline: none;
+    border: 2.5px solid #79d1d5;
+    background-color: #79d0d526;
+}
+#update:hover{
+    outline: none;
+    border: 2.5px solid #79d1d5;
+    background-color: #fdd34980;
+}
+#form {
+    margin: 0px;
+}
+ul {
+    list-style-type: none;
+}
+.li {
+    float: left;
+    background-color: rgba(255, 255, 255, 0.87);
+    width: 70%;
+    text-align: center;
+    color: #d99202;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    min-width: 250px;
+}
+.current_user {
+    float: right;
+    background-color:  #b9eff1be;
+    width: 70%;
+    color: #d99202;
+    padding: 10px;
+    margin: 10px;
+    margin-left: 400px;
+    border-radius: 5px;
+    min-width: 250px;
+}
+.message {
+    color: #1f686d;
+    font-style: italic;
+    font-size: 22.5px;
+}
+.date {
+    color: #d9910294;
+}
+#threeSecUsername {
+    color: #d99202;
+    margin: 10px;
+}
+
+/*Mobile*/
+@media only screen and (max-width: 450px) {
+    /*Selektovanje svih elemenata koji imaju prefiks col-*/
+    [class*="col-"] {
+        width: 100%;
+        padding: 10px;
+        margin: 0px;
+    }
+    .nav {
+        min-width: 250px;
+        height: 30px;
+        font-size: 15px;
+    }
+    #username {
+        width: 100%;
+    }
+    #message {
+        width: 100%;
+    }
+    #color {
+        width: 100%;
+    }
+    #section {
+        height: 270px;
+    }
+    .message {
+        font-size: 17px;
+    }
+    .date {
+        font-size: 12px;
+    }
+    .current_user {
+        font-size: 12px;
+    }
+    .li {
+        font-size: 12px;
+        padding: 5px;
+    }
+    #update {
+        display: none;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 450px) {
+    /*Selektovanje svih elemenata koji imaju prefiks col-*/
+    [class*="col-t-"] {
+        float: left;
+    }
+    #section {
+        height: 340px;
+    }
+    .nav {
+        min-width: 250px;
+        height: 40px;
+        font-size: 20px;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+}
+
+/* Desktop */
+@media only screen and (min-width: 900px) {
+    /*Selektovanje svih elemenata koji imaju prefiks col-*/
+    [class*="col-t-"] {
+        float: left;
+    }
+    #section {
+        height: 340px;
+    }
+    .nav {
+        margin: 5px;
+    }
+    .col-6 {
+        width: 50%;
+    }
+    .col-12 {
+        width: 100%;
+    }
+}

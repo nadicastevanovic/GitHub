@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CHAT ROOM</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <div id='header' class="col-12 col-t-12">
+            <h1>ITBootcamp Chat</h1>
+            <h3 id='chatroom'>Choose a chatroom:</h3>
+        </dv>
+        
+        <div id='navigationBar' class="col-t-12">
+            <span class="nav" id='#general'>#general</span>
+            <span class="nav" id='#js'>#js</span>
+            <span class="nav" id='#homework'>#homework</span>
+            <span class="nav" id='#test'>#test</span>
+        </div>
+
+        <div id='section' class="col-12 col-t-12">
+            <ul></ul>
+        </div>
+        
+        <div id='inputs' class="col-12 col-t-12">
+
+            <form action="" id='colorpicker'>
+                <input type="color" name="" value="#ffffff" id="color">
+                <input type="submit" value="Update color" id='updateColor'>
+            </form>
+
+            <form action="" id='dateAndTime'>
+                <input type="date" name="" class="dateInput">
+                <input type="date" name="" class="dateInput">
+                <input type="submit" value="Set dates" id='setDates'>
+            </form>
+
+            <form action="" id='form'>
+                <textarea name="" id="message" cols="50" rows="2" placeholder="Your message..."  autocomplete="off"></textarea>
+                <input type="submit" value="Send" id='send'>
+                <!-- <span class="popuptext" id="myPopup"></span> -->
+            </form>
+
+            <br>
+            
+            <form action="" id='form2'>
+                <input type="text" name="username" id="username" placeholder="Update username">
+                <input type="submit" value="Update" id='update'>
+            </form>
+
+            <p id='threeSecUsername'></p>
+
+        </div>
+        
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-firestore.js"></script>
+
+        <!-- TODO: Add SDKs for Firebase products that you want to use
+            https://firebase.google.com/docs/web/setup#available-libraries -->
+
+        <script>
+            // Your web app's Firebase configuration
+            var firebaseConfig = {
+                apiKey: "AIzaSyA4EVUV9KwR-1Anxgk1PSbNP2d_1Y5GRYo",
+                authDomain: "chatroomproject-f7f12.firebaseapp.com",
+                databaseURL: "https://chatroomproject-f7f12.firebaseio.com",
+                projectId: "chatroomproject-f7f12",
+                storageBucket: "chatroomproject-f7f12.appspot.com",
+                messagingSenderId: "132817346774",
+                appId: "1:132817346774:web:6287425e7220a1950ba977"
+            };
+            // Initialize Firebase
+            firebase.initializeApp(firebaseConfig);
+            let db = firebase.firestore();
+        </script>
+
+        <script type='module' src="app.js"></script>
+
+    </body>
+</html>

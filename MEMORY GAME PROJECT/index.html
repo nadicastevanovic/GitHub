@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Memory game - Nadica Stevanović (9517)</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="col-6 col-t-12">
+            <div id="header1">
+                <h2>MEMORY GAME</h2>
+            </div>
+
+            <br>
+            
+            <div id="input">
+                <p>Write your username and press ENTER</p>
+                <input type="text" name="userName" id="userName" placeholder="Your username...">
+            </div>
+            
+            <br>
+            
+            <div id="radioButton" align="center">
+                    <p>Choose your difficulty</p>
+                    <input class="rad" type="radio" name="difficulty" id="easy" value="easy"> EASY
+                    <input class="rad" type="radio" name="difficulty" id="medium" value="medium"> MEDIUM
+                    <input class="rad" type="radio" name="difficulty" id="hard" value="hard"> HARD
+                    <input class="rad" type="radio" name="difficulty" id="expert" value="expert"> EXPERT
+            </div>
+            
+            <br>
+            
+            <div id="input">
+                <p>Click on any card to start the game and the timer</p> 
+                <input type="text" name="timer" id="timer" disabled placeholder="0">
+            
+            </div>
+            
+            <br>
+            
+            <div id="table_game">
+            </div>
+        </div>
+
+        <div class="col-6 col-t-12">
+            <div id="header2">
+                <h2>HIGH SCORES</h2>
+            </div>
+            
+            <br>
+           
+            <div id="buttons">
+                <div class="col-6">
+                    <input type="button" class="button" id="EASY" value="EASY">
+                    <input type="button" class="button" id="MEDIUM" value="MEDIUM">
+                </div>
+                <div class="col-6">
+                    <input type="button" class="button" id="HARD" value="HARD">
+                    <input type="button" class="button" id="EXPERT" value="EXPERT">
+                </div>
+            </div>
+           
+            <br>
+            
+            <div id="table_bestScores">   
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
